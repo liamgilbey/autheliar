@@ -1,0 +1,27 @@
+{
+    "id": "005EFB7F",
+    "path": "/mnt/host/autheliar/R/authelia.R",
+    "project_path": "R/authelia.R",
+    "type": "r_source",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1615003054043.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "tempName": "Untitled1",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "69,0",
+        "scrollLine": "53"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1615005413,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1615005414009,
+    "read_only": false,
+    "read_only_alternatives": []
+}

@@ -1,0 +1,22 @@
+
+
+
+library(autheliar)
+
+# connect to the server
+x <- authelia$new("https://authelia.gilakl.com")
+# verify authentication against rstudio
+x$verify("https://rstudio.example.com")
+
+x$config()
+x$health()
+x$firstfactor(
+  username = "liam",
+  password = "D3activ8d!",
+  domain = "https://rstudio.gilakl.com"
+)
+x$verify("https://rstudio.gilakl.com")
+x$verify("aaa.gilakl.com")
+x$verify("https://radarr.gilakl.com")
+x$logout()
+x

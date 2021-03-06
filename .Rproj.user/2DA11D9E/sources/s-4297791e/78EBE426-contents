@@ -1,0 +1,19 @@
+Package: autheliar
+Type: Package
+Title: An R wrapper for the authelia API
+Version: 0.1.0
+Authors@R: c(
+  person("Liam", "Gilbey", , "liam.gilbey@gmail.com", c("aut", "cre"))
+  )
+Description: Autheliar helps to provide users with an intuitive interface to the
+    Authelia API. It allows R users to implement SSO authentication with the goal
+    focused on providing authentication to plumber APIs and shiny applications.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+Imports:
+  R6,
+  httr,
+  jsonlite
+BugReports: https://github.com/liamgilbey/autheliar/issues  
+RoxygenNote: 7.1.1
