@@ -1,0 +1,52 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# autheliar
+
+[![Travis build status](https://travis-ci.org/liamgilbey/autheliar.svg?branch=master)](https://travis-ci.org/liamgilbey/autheliar)
+[![Codecov test coverage](https://codecov.io/gh/liamgilbey/autheliar/branch/master/graph/badge.svg)](https://codecov.io/gh/liamgilbey/autheliar?branch=master)
+
+The goal of autheliar is to provide an R interface to the Authelia API, allowing 
+a low-overhead way to bring authentication into R applications.
+
+## Installation
+
+For now this package is only available from GitHub.
+
+```{r, eval = FALSE}
+# install.packages("devtools")
+devtools::install_github("liamgilbey/autheliar")
+```
+
+
+## Usage
+
+The central object to `autheliar` is the R6 class `authelia`. As with all R6 classes, a new `ldap` object is created with the `new` method:
+
+
+```{r, eval = FALSE}
+auth <- autheliar::authelia$new("https://authelia.example.com")
+```
+
+
+Logging into the server can be achieved using first-factor authentication:
+
+```{r, eval = FALSE}
+auth$firstfactor(
+  username = "John",
+  password = "secretpassword"
+)
+```
+
